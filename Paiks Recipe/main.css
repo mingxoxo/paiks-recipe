@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+
+
+body{
+	font-family: 'Sulphur Point', sans-serif;
+}
+h1{
+	font-size: 6em;
+	color:  rgb(199, 198, 198);
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+  #background {
+            background-image: url('paik.jpg');
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            overflow: hidden;
+        }
+#sel {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        button,
+        #h1,
+        #h2,
+        #h3,
+        #j1,
+        #j2,
+        #j3,
+        #y1,
+        #y2,
+        #y3,
+        #il1,
+        #il2,
+        #il3 {
+            margin: 5px;
+        }
+
+        #m {
+            display: inline;
+        }
+
+        #m li {
+            margin: 10px;
+            padding: 10px;
+            color: #000;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.5);
+            list-style-type: none;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        #m li.active {
+            background: #666;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        #m a:hover {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #m li:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+        #tag a{
+	        display:inline-block;
+	        margin: 10px;
+	        padding : 5px;
+	        color: #000;
+        }
+        i{
+            margin-right:10px;
+            font-size:24px;
+        }
+        .myContent {
+            margin-right: 30px;
+            color: white;
+            font-size: 3em;
+            float: center;
+        }
+
+        .paikintroduce {
+            color: white;
+            text-align: left;
+            margin-right: 30px;
+            font-size: 1.1em;
+            float: right;
+        }
+        #slide1 {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('slide1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slide2 {
+            background-color: black;
+        }

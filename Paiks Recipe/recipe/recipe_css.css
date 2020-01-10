@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+body, pre{
+   font-family: 'Nunito Sans', sans-serif;
+}
+.sidenav {
+    width: 12%;
+    position: fixed;
+    z-index: 1;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+    margin-top: 15%;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(223, 223, 223);
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #fdfdfd;
+}
+
+.main {
+    margin-left: 140px;
+    /* Same width as the sidebar + left position in px */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    }
+    input{
+        width: 90%;
+        font-size: large;
+    }
+.text{
+width: 90%;
+padding: 6% 10%;
+margin : 0 10px;
+border: 1px solid #575756;
+background-color: transparent;
+font-size: 14px;
+line-height: 18px;
+border-radius: 10px;
+}
+button{
+    margin: 2px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+body {
+    background-image:  url('bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: rgb(228, 184, 89);
+}
+.dropdown-item:active {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="recipe_css.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img src="domain.jpg" height="100%" class="mx-auto d-block">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center sticky-top">
+        <a class="navbar-brand " href="../main.html#anchor3">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Korean
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="h1.html">Dakbokkeumtang</a>
+                        <a class="dropdown-item" href="h2.html">Japchae</a>
+                        <a class="dropdown-item" href="h3.html">Tofu Kimchi</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Chinese
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="j1.html">Mapa Tofu</a>
+                        <a class="dropdown-item" href="j2.html">Chinese Fried Rice</a>
+                        <a class="dropdown-item" href="j3.html">Black Bean Sauce Noodles</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Japanese
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="il1.html">Cold Ramyun</a>
+                        <a class="dropdown-item" href="il2.html">Onion over Rice</a>
+                        <a class="dropdown-item" href="il3.html">Fried Beef over Rice</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Western
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="y1.html">Bulgogi Pasta</a>
+                        <a class="dropdown-item" href="y2.html">Chicken Steak</a>
+                        <a class="dropdown-item" href="y3.html">Onion Soup</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Timer
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item b">
+                            <form id="countdown">
+                                <input id="tminus" class="mx-auto d-block" placeholder="0:00" style="width:100%" />
+                                <input id="request" class="mx-auto d-block" placeholder="Enter Minutes here"
+                                    style="width:100%" />
+                                <a href="#" class="btn btn-secondary enterTime mx-auto d-block"
+                                    style="width:90%; font-size:large; margin: 5px auto 5px auto">Submit Time</a>
+                                <input type="reset" class="btn btn-secondary enterTime mx-auto d-block"
+                                    value="Clear form" />
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Order
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" id="back">
+                            <form name="mainSearchForm" method="get" action="http://www.lottemart.com/search/search.do">
+                                <div class="input">
+                                    <fieldset>
+                                        <legend>Online Market Order ?</legend>
+                                        <input type="text" class="text" value="" name="searchTerm"
+                                            onkeypress="return DQhandleEnter(1,event, 'mainSearch');"
+                                            onmousedown="dq_setTextbox('1',event);"
+                                            onkeydown="dq_setTextbox('1',event);" autocomplete="off"
+                                            placeholder="search ingredients">
+                                        <button type="submit" onclick="javascript:DQmainSearch_submit();return false"
+                                            class="btn btn-secondary mx-auto d-block"
+                                            onkeydown="if(event.keyCode==13){javascript:DQmainSearch_submit();return false}">
+                                            Search</button>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="margin-top:10%">
+            <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ny9XkQbN6sI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2>Cold Ramyun</h2><br>
+                <h4>#spicy</h4><br>
+                <h3>[Ingredients]</h3><br>
+                <p>
+                    1 Ramyun<br>
+                    1/6 Onion<br>
+                    2 cup Soybean Sprouts<br>
+                    2 Tbsp Dark Soy Sauce<br>
+                    2 Tbsp Brown Sugar<br>
+                    2 Tbsp Vinegar<br>
+                    1 cup Water<br>
+                    1 Chungyang Red Pepper<br>
+                    Ice cubes<br>
+                </p>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>[Recipe]</h3><br>
+        <p>
+            1. Rinse soybean sprouts.<br>
+            2. Slice onions thinly.<br>
+            3. Cut chungyang red pepper in half and slice it.<br>
+            4. Pour water in a pot, and when it's boiling add and boil soybean sprouts, noodles, ramyun flakes, and
+            onions and then rinse in cold water.<br>
+            5. Mix water, ramyun soup powder, dark soy sauce, vinegar and brown sugar.<br>
+            6. Use sliced chungyang red pepper in broth and for garnish.<br>
+            7. Put cooked vegetables and noodles and add chungyang red pepper and pour broth.<br>
+        </p>
+    </div>
+    <script>
+        var totalAmount = localStorage.getItem('countDown') || 0,
+            timeloop;
+
+        if (totalAmount) {
+            timeSet()
+        }
+
+        function timeSet() {
+            totalAmount--;
+            // Refresh value in localStorage
+            localStorage.setItem('countDown', totalAmount);
+
+            // If countdown is over, then remove value from storage and clear timeout
+            if (totalAmount < 0) {
+                localStorage.removeItem('countDown');
+                totalAmount = 0;
+                clearTimeout(timeloop);
+                return;
+            }
+
+            var minutes = parseInt(totalAmount / 60);
+            var seconds = parseInt(totalAmount % 60);
+
+            if (seconds < 10)
+                seconds = "0" + seconds;
+
+            $('#tminus').val(minutes + ":" + seconds);
+
+            timeloop = setTimeout(timeSet, 1000);
+        }
+
+        $('.enterTime').click(function () {
+            var reqVal = $('#request').val();
+            var parAmt = parseInt(reqVal);
+
+            if (timeloop) {
+                clearTimeout(timeloop)
+            }
+
+            totalAmount = parAmt * 60;
+
+            $('#request').val(" ");
+
+            timeSet();
+        })
+
+        // Clear timeout and remove localStorage value when resetting form
+        $('#countdown').on('reset', function () {
+            totalAmount = 0;
+            clearTimeout(timeloop);
+            localStorage.removeItem('countDown');
+        })</script>
+
+</body>
+
+</html>

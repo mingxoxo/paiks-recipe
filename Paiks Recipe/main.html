@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Paik's recipe</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="Resource-type" content="Document" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
+        integrity="sha256-MHZlm8KTLRxClmwQTYIfJEVbcRx1VIgfZJjaBOGCDoc=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"
+        integrity="sha256-Lw96aZrbaAuj9vBh9haoZrkYmRA9Rbkv4K6C8LonvBk=" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="tag.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="flip-card.css" />
+</head>
+
+<body>
+    <ul id="menu">
+        <li data-menuanchor="anchor1"><a href="#anchor1">Home</a></li>
+        <li data-menuanchor="anchor2"><a href="#anchor2">Who is Paik?</a></li>
+        <li data-menuanchor="anchor3"><a href="#anchor3">Select Menu</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section" id="background">
+            <h1>Paik's Recipe</h1>
+        </div>
+        <div class="section">
+            <div class="slide" id="slide1">
+                <div class="myContent">
+                    <p>Who is Paik?</p>
+                </div>
+                <div class="paikintroduce">
+                    <p>
+                        Name : Paik Jong Won<br><br>
+                        Birth : 1966.09.04<br><br>
+                        Company : THEBORN (CEO)<br><br>
+                        Job : Food Researcher, CEO, Broadcaster<br><br>
+                        Education : Yonsei University<br><br>
+                        TV Program : 'Home Food Paik Teacher', <br>'Paik Jong Won's Alley Restaurant', <br>'Battle of Korean Food', <br>'Paik Jong Won's Food Truck'<br><br>
+                        Awards : tvN 10 Awards, Entertainment Contents Award (2016), <br>SBS Entertainment Show Awards, Special Award (2016), <br>SBS Entertainment Show Awards, Achievement Award (2017)<br>
+                    </p>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="intro2.png" style="height:80%;" />
+            </div>
+        </div>
+        <div class="section" id="sel" style="overflow: scroll;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card-deck">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="Korean.jpg" alt="Avatar" style="width:100%;height:80%;">
+                                    <h3>Korean food</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <ul id="m">
+                                        <a href="recipe/h1.html">
+                                            <li>Dakbokkeumtang</li>
+                                        </a>
+                                        <a href="recipe/h2.html">
+                                            <li>Japchae</li>
+                                        </a>
+                                        <a href="recipe/h3.html">
+                                            <li>Tofu Kimchi</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="Chinese.jpg" alt="Avatar" style="width:100%;height:80%;">
+                                    <h3>Chinese food</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <ul id="m">
+                                        <a href="recipe/j1.html">
+                                            <li>Mapa Tofu</li>
+                                        </a>
+                                        <a href="recipe/j2.html">
+                                            <li>Chinese Fried Rice</li>
+                                        </a>
+                                        <a href="recipe/j3.html">
+                                            <li>Black Bean Sauce Noodles</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="Japan.jpg" alt="Avatar" style="width:100%; height:80%;">
+                                    <h3>Japanese food</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <ul id="m">
+                                        <a href="recipe/il1.html">
+                                            <li>Cold Ramyun</li>
+                                        </a>
+                                        <a href="recipe/il2.html">
+                                            <li>Onion over Rice</li>
+                                        </a>
+                                        <a href="recipe/il3.html">
+                                            <li>Fried Beef over Rice</li>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="Pasta.jpg" alt="Avatar" style="width:100%; height:80%;">
+                                    <h3>Western food</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <ul id="m">
+                                        <a href="recipe/y1.html">
+                                            <li>Bulgogi Pasta</li>
+                                        </a>
+                                        <a href="recipe/y2.html">
+                                            <li>Chicken Steak</li>
+                                        </a>
+                                        <a href="recipe/y3.html">
+                                            <li>Onion Soup</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>What tag do you want?</legend>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn btn-secondary" id="all">All</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag1">spicy</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag2">sweet</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag3">chicken</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag4">salty</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag5">soft</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag6">soy</button>
+                        <button type="button" class="btn btn btn-secondary" id="tag7">onion</button>
+                        <button type="button" class="btn btn btn-secondary" id="hide">hide</button>
+                    </div>
+                    <div class="row justify-content-center" id="tag">
+                        <a id="h1" href="recipe/h1.html"><i class='fas fa-angle-right'></i>Dakbokkeumtang</a>
+                        <a id="h2" href="recipe/h2.html"><i class='fas fa-angle-right'></i>Japchae</a>
+                        <a id="h3" href="recipe/h3.html"><i class='fas fa-angle-right'></i>Tofu Kimchi</a>
+                        <a id="j1" href="recipe/j1.html"><i class='fas fa-angle-right'></i>Mapa Tofu</a>
+                        <a id="j2" href="recipe/j2.html"><i class='fas fa-angle-right'></i>Chinese Fried Rice</a>
+                        <a id="j3" href="recipe/j3.html"><i class='fas fa-angle-right'></i>Black Bean Sauce Noodles</a>
+                        <a id="il1" href="recipe/il1.html"><i class='fas fa-angle-right'></i>Cold Ramyun</a>
+                        <a id="il2" href="recipe/il2.html"><i class='fas fa-angle-right'></i>Onion over Rice</a>
+                        <a id="il3" href="recipe/il3.html"><i class='fas fa-angle-right'></i>Fried Beef over
+                            <a id="y1" href="recipe/y1.html"><i class='fas fa-angle-right'></i>Bulgogi Pasta</a>
+                            <a id="y2" href="recipe/y2.html"><i class='fas fa-angle-right'></i>Chicken Steak</a>
+                            <a id="y3" href="recipe/y3.html"><i class='fas fa-angle-right'></i>Onion Soup</a>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript" src="tag.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: true,
+            anchors: ['anchor1', 'anchor2', 'anchor3'],
+            menu: '#menu',
+            sectionsColor: ['black', 'white', 'white'],
+            scrollOverflow: true
+        });
+    </script>
+</body>
+
+
+</html>

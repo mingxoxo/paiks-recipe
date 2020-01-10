@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="recipe_css.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+            <img src="domain.jpg" height="100%"class="mx-auto d-block">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center sticky-top" >
+        <a class="navbar-brand " href="../main.html#anchor3">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Korean
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="h1.html">Dakbokkeumtang</a>
+                        <a class="dropdown-item" href="h2.html">Japchae</a>
+                        <a class="dropdown-item" href="h3.html">Tofu Kimchi</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Chinese
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="j1.html">Mapa Tofu</a>
+                        <a class="dropdown-item" href="j2.html">Chinese Fried Rice</a>
+                        <a class="dropdown-item" href="j3.html">Black Bean Sauce Noodles</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Japanese
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="il1.html">Cold Ramyun</a>
+                        <a class="dropdown-item" href="il2.html">Onion over Rice</a>
+                        <a class="dropdown-item" href="il3.html">Fried Beef over Rice</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Western
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="y1.html">Bulgogi Pasta</a>
+                        <a class="dropdown-item" href="y2.html">Chicken Steak</a>
+                        <a class="dropdown-item" href="y3.html">Onion Soup</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Timer
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item b">
+                        <form id="countdown">
+                                <input id="tminus" class="mx-auto d-block" placeholder="0:00" style="width:100%"/>
+                                <input id="request" class="mx-auto d-block" placeholder="Enter Minutes here" style="width:100%" />
+                                <a href="#" class="btn btn-secondary enterTime mx-auto d-block"
+                                    style="width:90%; font-size:large; margin: 5px auto 5px auto">Submit Time</a>
+                                <input type="reset" class="btn btn-secondary enterTime mx-auto d-block" value="Clear form" />
+                            </form>
+                        </div>                        
+                    </div>
+                </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Order
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" id = "back">
+                            <form name="mainSearchForm" method="get" action="http://www.lottemart.com/search/search.do">
+                                <div class="input">
+                                    <fieldset>
+                                        <legend>Online Market Order ?</legend>
+                                        <input type="text" class="text" value="" name="searchTerm" onkeypress="return DQhandleEnter(1,event, 'mainSearch');"
+                                            onmousedown="dq_setTextbox('1',event);" onkeydown="dq_setTextbox('1',event);" autocomplete="off"
+                                            placeholder="search ingredients">
+                                        <button type="submit" onclick="javascript:DQmainSearch_submit();return false" class = "btn btn-secondary mx-auto d-block" onkeydown="if(event.keyCode==13){javascript:DQmainSearch_submit();return false}">
+                                            Search</button>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div class="container">
+        <div class="row" style="margin-top:10%">
+            <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/-EwR5eshbPE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2>Dakbokkeumtang<br>(Braised Spicy Chicken)</h2><br>
+                <h4>#spicy #sweet #chicken</h4><br>
+                <h3>[Ingredients]</h3><br>
+                <p>
+                    <pre>
+Cut chicken 1kg (No.10)
+Brown sugar 1/2cup (70g)
+Minced garlic 1/3 cup (45g)
+Dark soy sauce 1 cup (190g)
+Coarse chili powder 1/2 cup (45g)
+Fine chili powder 1/3 cup (30g)
+2 potatoes 270g
+1/2 carrot 160g
+1/2 onion 240g
+3 green onions 160g
+4 Cheongyang peppers 30g
+1 red pepper 10g
+2 king oyster mushrooms 50g
+3 Shiitake mushrooms 70g
+A pinch of pepper 2g
+Water 600mL</pre>
+                </p>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>[Recipe]</h3><br>
+        <p>
+1. Cut shiitake mushrooms into quarters and slice king oyster mushrooms into 2cm-wide pieces.<br>
+2. Cut carrot in half and slice into 1.5cm-wide pieces.<br>
+3. Slice 1/6 of onion.<br>
+4. Remove potato peel and half in half before cutting into sixths.<br>
+5. Chop Cheongyang pepper and red pepper into 2~3cm-wide pieces.<br>
+6. Chop green onion into 2~3cm-wide pieces.<br>
+7. Clean chicken bones and guts out of chicken under running water.<br>
+8. Add 600mL (enough to submerge chicken) to a pot and put in 1 chicken and 1/2 cup of brown sugar.<br>
+9. Once the water boils, add potatoes, carrots, and onions.<br>
+10. Once vegetables are half cooked, add 1/3 cup of garlic.<br>
+11. Add 1 cup of soy sauce and add king oyster and Shiitake mushrooms.<br>
+12. Add 1/2 cup of coarse chili powder, 1/3 cup of fine chili powder, and cook for 30-40 minutes.<br>
+13. After getting the right consistency, finish with green onions, Cheongyang pepper, red pepper, and pepper.<br>
+
+* Rinse chicken under running water. (The area around the guts can smell, so clean thoroughly)<br>
+* Adjust cooking time based on preference. (Keep cooking until the sauce has the desired consistency)<br>
+* Adjust the water amount based on the size of a pot and heat.<br>
+</p>
+    </div>
+    <script>
+        var totalAmount = localStorage.getItem('countDown') || 0,
+            timeloop;
+
+        if (totalAmount) {
+            timeSet()
+        }
+
+        function timeSet() {
+            totalAmount--;
+            // Refresh value in localStorage
+            localStorage.setItem('countDown', totalAmount);
+
+            // If countdown is over, then remove value from storage and clear timeout
+            if (totalAmount < 0) {
+                localStorage.removeItem('countDown');
+                totalAmount = 0;
+                clearTimeout(timeloop);
+                return;
+            }
+
+            var minutes = parseInt(totalAmount / 60);
+            var seconds = parseInt(totalAmount % 60);
+
+            if (seconds < 10)
+                seconds = "0" + seconds;
+
+            $('#tminus').val(minutes + ":" + seconds);
+
+            timeloop = setTimeout(timeSet, 1000);
+        }
+
+        $('.enterTime').click(function () {
+            var reqVal = $('#request').val();
+            var parAmt = parseInt(reqVal);
+            if (timeloop) {
+                clearTimeout(timeloop)
+            }
+            totalAmount = parAmt * 60;
+            $('#request').val(" ");
+            timeSet();
+        })
+
+        // Clear timeout and remove localStorage value when resetting form
+        $('#countdown').on('reset', function () {
+            totalAmount = 0;
+            clearTimeout(timeloop);
+            localStorage.removeItem('countDown');
+        })
+        
+        </script>
+    
+</body>
+
+</html>

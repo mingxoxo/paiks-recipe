@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="recipe_css.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+            <img src="domain.jpg" height="100%"class="mx-auto d-block">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center sticky-top" >
+        <a class="navbar-brand " href="../main.html#anchor3">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Korean
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="h1.html">Dakbokkeumtang</a>
+                        <a class="dropdown-item" href="h2.html">Japchae</a>
+                        <a class="dropdown-item" href="h3.html">Tofu Kimchi</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Chinese
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="j1.html">Mapa Tofu</a>
+                        <a class="dropdown-item" href="j2.html">Chinese Fried Rice</a>
+                        <a class="dropdown-item" href="j3.html">Black Bean Sauce Noodles</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Japanese
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="il1.html">Cold Ramyun</a>
+                        <a class="dropdown-item" href="il2.html">Onion over Rice</a>
+                        <a class="dropdown-item" href="il3.html">Fried Beef over Rice</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Western
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="y1.html">Bulgogi Pasta</a>
+                        <a class="dropdown-item" href="y2.html">Chicken Steak</a>
+                        <a class="dropdown-item" href="y3.html">Onion Soup</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Timer
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item b">
+                        <form id="countdown">
+                                <input id="tminus" class="mx-auto d-block" placeholder="0:00" style="width:100%"/>
+                                <input id="request" class="mx-auto d-block" placeholder="Enter Minutes here" style="width:100%" />
+                                <a href="#" class="btn btn-secondary enterTime mx-auto d-block"
+                                    style="width:90%; font-size:large; margin: 5px auto 5px auto">Submit Time</a>
+                                <input type="reset" class="btn btn-secondary enterTime mx-auto d-block" value="Clear form" />
+                            </form>
+                        </div>                        
+                    </div>
+                </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Order
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" id = "back">
+                            <form name="mainSearchForm" method="get" action="http://www.lottemart.com/search/search.do">
+                                <div class="input">
+                                    <fieldset>
+                                        <legend>Online Market Order ?</legend>
+                                        <input type="text" class="text" value="" name="searchTerm" onkeypress="return DQhandleEnter(1,event, 'mainSearch');"
+                                            onmousedown="dq_setTextbox('1',event);" onkeydown="dq_setTextbox('1',event);" autocomplete="off"
+                                            placeholder="search ingredients">
+                                        <button type="submit" onclick="javascript:DQmainSearch_submit();return false" class = "btn btn-secondary mx-auto d-block" onkeydown="if(event.keyCode==13){javascript:DQmainSearch_submit();return false}">
+                                            Search</button>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row" style="margin-top:10%">
+            <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/BqxpjY7TJ8g" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2>Mapa Tofu<br>(Mapadubu)</h2><br>
+                <h4>#spicy #salty #soft</h4><br>
+                <h3>[Ingredients]</h3><br>
+                <p>
+                    1 & 1/2 cup Tofu (180g)<br>
+                    1/2 tbsp Minced Garlic (8g)<br>
+                    1 tbsp Scallion (5g)<br>
+                    1 tbsp Green Onion (10g)<br>
+                    1/2 Cup Ground Pork (80g)<br>
+                    1/2 Cup Water (90g)<br>
+                    1/5 Cup Water (starch water) (40g)<br>
+                    1/5 tbsp Starch Powder (2g)<br>
+                    1/2 Cup All-purpose Sauce (100g)<br>
+                    1 tbsp Soybean Paste (15g)<br>
+                    2 tbsp Cooking Oil (15g)<br>
+                    1 tbsp Sesame Oil (7g)<br>
+                </p>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>[Recipe]</h3><br>
+        <p>
+            1. Cut tofu into 1.5-cm cubes.<br>
+            2. Chop scallion and green onion.<br>
+            3. Add cooking oil to a pan and stir-fry scallion and green onion over medium heat.<br>
+            4. Once scallion and green onion start to cook, add ground pork and continue cooking.<br>
+            5. When the pork starts to get cooked, add water, all-purpose sauce, and soybean paste and stir.<br>
+            6. Once soybean paste is all mixed, add the cut tofu.<br>
+            7. Add starch powder to water to make starch water and add it to the mapo tofu.<br>
+            8. Add sesame oil and sprinkle scallion to finish.<br>
+        </p>
+    </div>
+    <script>
+        var totalAmount = localStorage.getItem('countDown') || 0,
+            timeloop;
+
+        if (totalAmount) {
+            timeSet()
+        }
+
+        function timeSet() {
+            totalAmount--;
+            // Refresh value in localStorage
+            localStorage.setItem('countDown', totalAmount);
+
+            // If countdown is over, then remove value from storage and clear timeout
+            if (totalAmount < 0) {
+                localStorage.removeItem('countDown');
+                totalAmount = 0;
+                clearTimeout(timeloop);
+                return;
+            }
+
+            var minutes = parseInt(totalAmount / 60);
+            var seconds = parseInt(totalAmount % 60);
+
+            if (seconds < 10)
+                seconds = "0" + seconds;
+
+            $('#tminus').val(minutes + ":" + seconds);
+
+            timeloop = setTimeout(timeSet, 1000);
+        }
+
+        $('.enterTime').click(function () {
+            var reqVal = $('#request').val();
+            var parAmt = parseInt(reqVal);
+
+            if (timeloop) {
+                clearTimeout(timeloop)
+            }
+
+            totalAmount = parAmt * 60;
+
+            $('#request').val(" ");
+
+            timeSet();
+        })
+
+        // Clear timeout and remove localStorage value when resetting form
+        $('#countdown').on('reset', function () {
+            totalAmount = 0;
+            clearTimeout(timeloop);
+            localStorage.removeItem('countDown');
+        })</script>
+
+</body>
+
+</html>
