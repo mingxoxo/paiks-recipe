@@ -1,2 +1,2 @@
 # web-programming project
-# : Paiks Recipe
+# - Paiks Recipe
