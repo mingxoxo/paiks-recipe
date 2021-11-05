@@ -1,5 +1,6 @@
 # web-programming project
 # - Paiks Recipe
+- 성다연, 이정민, 홍주영
 
 ![image](https://user-images.githubusercontent.com/44529556/140442715-87a1964a-1e8f-463e-bc52-a46c48d2420d.png)
 ![image](https://user-images.githubusercontent.com/44529556/140442798-43b472fc-d323-4af6-b7a8-82815113a247.png)
